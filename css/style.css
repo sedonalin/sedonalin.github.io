@@ -321,7 +321,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 .section-inner { max-width: var(--max-w); margin: 0 auto; }
 
 .portfolio-grid {
-  display: grid; grid-template-columns: repeat(4,1fr); gap: 20px;
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 20px;
 }
 .portfolio-item { cursor: pointer; }
 .portfolio-item-thumb {
@@ -396,24 +396,56 @@ button { cursor: pointer; font-family: var(--font-body); }
   border-left: 2px solid var(--primary);
   margin-bottom: 32px;
 }
-.subcat-row .cat-btn {
-  font-size: 0.74rem; padding: 6px 16px;
-}
-.cat-btn {
+.cat-btn, .subcat-btn {
   padding: 8px 20px;
   border: 1px solid rgba(51,51,51,0.2);
   font-size: 0.78rem; letter-spacing: 0.1em;
+  font-family: var(--font-body); font-weight: 300;
   color: var(--text-light); background: transparent;
   transition: all var(--ease);
+  cursor: pointer;
 }
-.cat-btn:hover, .cat-btn.active {
+.cat-btn:hover, .cat-btn.active,
+.subcat-btn:hover, .subcat-btn.active {
   border-color: var(--primary); color: var(--primary);
   background: var(--primary-light);
 }
+/* 作品集主格（分類篩選後） */
+.pf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  transition: gap 0.3s ease;
+}
+
+/* IG 小方格模式（全部檢視） */
+.pf-grid--dense {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.pf-item { position: relative; overflow: hidden; cursor: pointer; }
+
+/* 一般模式：3/4 直式 */
+.pf-thumb {
+  width: 100%; aspect-ratio: 3/4; overflow: hidden;
+}
+/* IG 小方格模式：1:1 正方形 */
+.pf-grid--dense .pf-thumb {
+  aspect-ratio: 1 / 1;
+}
+
+.pf-thumb img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.45s ease;
+  display: block;
+}
+.pf-item:hover .pf-thumb img { transform: scale(1.06); }
+
+/* 舊用法相容 */
 .portfolio-full-grid {
   display: grid; grid-template-columns: repeat(3,1fr); gap: 14px;
 }
-.pf-item { position: relative; overflow: hidden; cursor: pointer; }
 .pf-item img {
   width: 100%; aspect-ratio: 3/4; object-fit: cover;
   transition: transform 0.5s ease;
@@ -450,7 +482,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 }
 .service-card-num {
   font-family: var(--font-display); font-size: 2.5rem;
-  font-weight: 300; color: rgba(200,92,80,0.15);
+  font-weight: 300; color: var(--primary);
   line-height: 1; margin-bottom: 16px;
 }
 .service-card-title {
@@ -837,13 +869,15 @@ button { cursor: pointer; font-family: var(--font-body); }
    ========================================= */
 @media (max-width: 1024px) {
   :root { --px: 40px; --section-gap: 72px; }
-  .portfolio-grid     { grid-template-columns: repeat(2,1fr); }
-  .services-grid      { grid-template-columns: repeat(2,1fr); }
-  .portfolio-full-grid{ grid-template-columns: repeat(2,1fr); }
-  .booking-steps      { grid-template-columns: repeat(2,1fr); }
-  .booking-steps::before { display: none; }
-  .about-hero-layout  { gap: 48px; }
-  .contact-layout     { gap: 48px; }
+  .portfolio-grid       { grid-template-columns: repeat(2,1fr); }
+  .services-grid        { grid-template-columns: repeat(2,1fr); }
+  .portfolio-full-grid  { grid-template-columns: repeat(2,1fr); }
+  .pf-grid              { grid-template-columns: repeat(2,1fr); }
+  .pf-grid--dense       { grid-template-columns: repeat(3,1fr); }
+  .booking-steps        { grid-template-columns: repeat(2,1fr); }
+  .booking-steps::before{ display: none; }
+  .about-hero-layout    { gap: 48px; }
+  .contact-layout       { gap: 48px; }
 }
 
 /* =========================================
@@ -906,7 +940,9 @@ button { cursor: pointer; font-family: var(--font-body); }
   .contact-img-wrap  { max-height: 280px; }
 
   /* Portfolio full grid */
-  .portfolio-full-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .portfolio-full-grid  { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .pf-grid              { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .pf-grid--dense       { grid-template-columns: repeat(3,1fr); gap: 3px; }
 
   /* Footer */
   .footer { flex-direction: column; gap: 14px; text-align: center; padding: 22px var(--px); }
