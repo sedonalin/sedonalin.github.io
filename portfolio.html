@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>作品集 | Sedona 攝影師</title>
-  <meta name="description" content="Sedona 攝影師｜個人寫真、閨蜜寫真、生日寫真、主題寫真作品集。">
+  <meta name="description" content="Sedona 攝影師作品集｜個人寫真、主題寫真、活動紀錄">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
@@ -17,207 +17,297 @@
       <span class="nav-logo-zh">攝影師</span>
     </a>
     <ul class="nav-menu">
-      <li><a href="portfolio.html" class='active'>作品集</a></li>
-      <li><a href="services.html" >服務項目</a></li>
-      <li><a href="about.html" >關於我</a></li>
-      <li><a href="pricing.html" >價目表</a></li>
-      <li><a href="contact.html" >聯絡我</a></li>
+      <li><a href="portfolio.html" class="active">作品集</a></li>
+      <li><a href="services.html">服務項目</a></li>
+      <li><a href="about.html">關於我</a></li>
+      <li><a href="pricing.html">價目表</a></li>
+      <li><a href="contact.html">聯絡我</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="選單">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" aria-label="選單"><span></span><span></span><span></span></button>
   </nav>
   <div class="nav-drawer">
-    <a href="portfolio.html">作品集</a>
+    <a href="portfolio.html" class="active">作品集</a>
     <a href="services.html">服務項目</a>
     <a href="about.html">關於我</a>
     <a href="pricing.html">價目表</a>
     <a href="contact.html">聯絡我</a>
   </div>
-  <main class="page">
 
-    <!-- PAGE HERO -->
-    <div class="page-hero" style="padding-bottom:40px;">
-      <div style="max-width:var(--max-w); margin:0 auto;">
-        <h1 class="page-hero-en">Portfolio</h1>
+  <main class="page">
+    <div class="page-hero">
+      <div class="section-inner">
+        <p class="page-hero-en">Portfolio</p>
         <p class="page-hero-zh">作品集</p>
       </div>
     </div>
 
-    <!-- GALLERY -->
-    <section class="section" style="padding-top:48px;">
+    <section class="section">
       <div class="section-inner">
 
-        <!-- Category filter -->
-        <div class="portfolio-cats">
-          <button class="cat-btn active" data-cat="all">全部</button>
-          <button class="cat-btn" data-cat="personal">個人寫真</button>
-          <button class="cat-btn" data-cat="friends">閨蜜寫真</button>
-          <button class="cat-btn" data-cat="birthday">生日寫真</button>
-          <button class="cat-btn" data-cat="theme">主題寫真</button>
-          <button class="cat-btn" data-cat="boudoir">女生大尺</button>
-          <button class="cat-btn" data-cat="event">活動紀錄</button>
+        <div class="portfolio-cats" id="catRow">
+          <button class="cat-btn active" data-cat="全部">全部</button>
+          <button class="cat-btn" data-cat="個人寫真">個人寫真</button>
+          <button class="cat-btn" data-cat="主題寫真">主題寫真</button>
+          <button class="cat-btn" data-cat="活動紀錄">活動紀錄</button>
         </div>
 
-        <!-- Grid -->
-        <div class="portfolio-full-grid">
-          
-          <div class="pf-item fade-in" data-cat="personal">
-            <img src="https://picsum.photos/seed/p1/600/750" alt="個人寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">個人寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="personal">
-            <img src="https://picsum.photos/seed/p2/600/750" alt="個人寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">個人寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="personal">
-            <img src="https://picsum.photos/seed/p3/600/750" alt="個人寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">個人寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="personal">
-            <img src="https://picsum.photos/seed/p4/600/750" alt="個人寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">個人寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="personal">
-            <img src="https://picsum.photos/seed/p5/600/750" alt="個人寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">個人寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="personal">
-            <img src="https://picsum.photos/seed/p6/600/750" alt="個人寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">個人寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="friends">
-            <img src="https://picsum.photos/seed/f1/600/750" alt="閨蜜寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">閨蜜寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="friends">
-            <img src="https://picsum.photos/seed/f2/600/750" alt="閨蜜寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">閨蜜寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="friends">
-            <img src="https://picsum.photos/seed/f3/600/750" alt="閨蜜寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">閨蜜寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="friends">
-            <img src="https://picsum.photos/seed/f4/600/750" alt="閨蜜寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">閨蜜寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="birthday">
-            <img src="https://picsum.photos/seed/b1/600/750" alt="生日寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">生日寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="birthday">
-            <img src="https://picsum.photos/seed/b2/600/750" alt="生日寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">生日寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="birthday">
-            <img src="https://picsum.photos/seed/b3/600/750" alt="生日寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">生日寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="birthday">
-            <img src="https://picsum.photos/seed/b4/600/750" alt="生日寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">生日寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="theme">
-            <img src="https://picsum.photos/seed/t1/600/750" alt="主題寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">主題寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="theme">
-            <img src="https://picsum.photos/seed/t2/600/750" alt="主題寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">主題寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="theme">
-            <img src="https://picsum.photos/seed/t3/600/750" alt="主題寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">主題寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="theme">
-            <img src="https://picsum.photos/seed/t4/600/750" alt="主題寫真" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">主題寫真</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="boudoir">
-            <img src="https://picsum.photos/seed/bd1/600/750" alt="女生大尺" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">女生大尺</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="boudoir">
-            <img src="https://picsum.photos/seed/bd2/600/750" alt="女生大尺" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">女生大尺</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="boudoir">
-            <img src="https://picsum.photos/seed/bd3/600/750" alt="女生大尺" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">女生大尺</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="event">
-            <img src="https://picsum.photos/seed/e1/600/750" alt="活動紀錄" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">活動紀錄</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="event">
-            <img src="https://picsum.photos/seed/e2/600/750" alt="活動紀錄" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">活動紀錄</span>
-            </div>
-          </div>
-          <div class="pf-item fade-in" data-cat="event">
-            <img src="https://picsum.photos/seed/e3/600/750" alt="活動紀錄" loading="lazy">
-            <div class="pf-overlay">
-              <span class="pf-overlay-label">活動紀錄</span>
-            </div>
-          </div>
+        <div class="subcat-row" id="subcatRow" style="display:none;">
+          <button class="subcat-btn active" data-subcat="全部">全部</button>
+          <button class="subcat-btn" data-subcat="中式旗袍">中式旗袍</button>
+          <button class="subcat-btn" data-subcat="日式花魁">日式花魁</button>
+          <button class="subcat-btn" data-subcat="異域美人">異域美人</button>
+          <button class="subcat-btn" data-subcat="羅莉塔">羅莉塔</button>
+          <button class="subcat-btn" data-subcat="聖誕節">聖誕節</button>
+          <button class="subcat-btn" data-subcat="萬聖節">萬聖節</button>
+          <button class="subcat-btn" data-subcat="藏族">藏族</button>
+          <button class="subcat-btn" data-subcat="輕婚紗">輕婚紗</button>
         </div>
 
-        <!-- CTA -->
-        <div style="text-align:center; margin-top:64px;" class="fade-in">
-          <p style="font-size:0.88rem; color:var(--text-light); letter-spacing:0.1em; margin-bottom:20px;">
-            想看更多作品？歡迎透過 IG 或 LINE 與我聯絡
-          </p>
-          <a href="contact.html" class="btn-outline">聯絡我</a>
+        <div class="pf-grid" id="pfGrid">
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_01.jpg" alt="個人寫真 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_02.jpg" alt="個人寫真 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_03.jpg" alt="個人寫真 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_04.jpg" alt="個人寫真 04" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_05.jpg" alt="個人寫真 05" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_06.jpg" alt="個人寫真 06" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_07.jpg" alt="個人寫真 07" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_08.jpg" alt="個人寫真 08" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_09.jpg" alt="個人寫真 09" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_10.jpg" alt="個人寫真 10" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_11.jpg" alt="個人寫真 11" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_12.jpg" alt="個人寫真 12" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_13.jpg" alt="個人寫真 13" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_15.jpg" alt="個人寫真 15" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_16.jpg" alt="個人寫真 16" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_17.jpg" alt="個人寫真 17" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_18.jpg" alt="個人寫真 18" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_19.jpg" alt="個人寫真 19" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_20.jpg" alt="個人寫真 20" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_21.jpg" alt="個人寫真 21" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_22.jpg" alt="個人寫真 22" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_23.jpg" alt="個人寫真 23" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="個人寫真">
+            <div class="pf-thumb"><img src="images/portfolio/personal_24.jpg" alt="個人寫真 24" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="中式旗袍">
+            <div class="pf-thumb"><img src="images/portfolio/theme_qipao_01.jpg" alt="中式旗袍 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="中式旗袍">
+            <div class="pf-thumb"><img src="images/portfolio/theme_qipao_02.jpg" alt="中式旗袍 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="中式旗袍">
+            <div class="pf-thumb"><img src="images/portfolio/theme_qipao_03.jpg" alt="中式旗袍 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="中式旗袍">
+            <div class="pf-thumb"><img src="images/portfolio/theme_qipao_04.jpg" alt="中式旗袍 04" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="中式旗袍">
+            <div class="pf-thumb"><img src="images/portfolio/theme_qipao_05.jpg" alt="中式旗袍 05" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="中式旗袍">
+            <div class="pf-thumb"><img src="images/portfolio/theme_qipao_06.jpg" alt="中式旗袍 06" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="日式花魁">
+            <div class="pf-thumb"><img src="images/portfolio/theme_oiran_01.jpg" alt="日式花魁 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="日式花魁">
+            <div class="pf-thumb"><img src="images/portfolio/theme_oiran_02.jpg" alt="日式花魁 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="日式花魁">
+            <div class="pf-thumb"><img src="images/portfolio/theme_oiran_03.jpg" alt="日式花魁 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="日式花魁">
+            <div class="pf-thumb"><img src="images/portfolio/theme_oiran_04.jpg" alt="日式花魁 04" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="日式花魁">
+            <div class="pf-thumb"><img src="images/portfolio/theme_oiran_05.jpg" alt="日式花魁 05" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="日式花魁">
+            <div class="pf-thumb"><img src="images/portfolio/theme_oiran_06.jpg" alt="日式花魁 06" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="異域美人">
+            <div class="pf-thumb"><img src="images/portfolio/theme_exotic_01.jpg" alt="異域美人 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="異域美人">
+            <div class="pf-thumb"><img src="images/portfolio/theme_exotic_02.jpg" alt="異域美人 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="異域美人">
+            <div class="pf-thumb"><img src="images/portfolio/theme_exotic_03.jpg" alt="異域美人 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="異域美人">
+            <div class="pf-thumb"><img src="images/portfolio/theme_exotic_04.jpg" alt="異域美人 04" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="異域美人">
+            <div class="pf-thumb"><img src="images/portfolio/theme_exotic_05.jpg" alt="異域美人 05" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="異域美人">
+            <div class="pf-thumb"><img src="images/portfolio/theme_exotic_06.jpg" alt="異域美人 06" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="羅莉塔">
+            <div class="pf-thumb"><img src="images/portfolio/theme_lolita_01.jpg" alt="羅莉塔 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="羅莉塔">
+            <div class="pf-thumb"><img src="images/portfolio/theme_lolita_02.jpg" alt="羅莉塔 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="羅莉塔">
+            <div class="pf-thumb"><img src="images/portfolio/theme_lolita_03.jpg" alt="羅莉塔 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="羅莉塔">
+            <div class="pf-thumb"><img src="images/portfolio/theme_lolita_04.jpg" alt="羅莉塔 04" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="羅莉塔">
+            <div class="pf-thumb"><img src="images/portfolio/theme_lolita_05.jpg" alt="羅莉塔 05" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="羅莉塔">
+            <div class="pf-thumb"><img src="images/portfolio/theme_lolita_06.jpg" alt="羅莉塔 06" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="聖誕節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_xmas_01.jpg" alt="聖誕節 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="聖誕節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_xmas_02.jpg" alt="聖誕節 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="聖誕節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_xmas_03.jpg" alt="聖誕節 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="聖誕節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_xmas_04.jpg" alt="聖誕節 04" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="聖誕節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_xmas_05.jpg" alt="聖誕節 05" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="聖誕節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_xmas_06.jpg" alt="聖誕節 06" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="萬聖節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_halloween_01.jpg" alt="萬聖節 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="萬聖節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_halloween_02.jpg" alt="萬聖節 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="萬聖節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_halloween_03.jpg" alt="萬聖節 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="萬聖節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_halloween_04.jpg" alt="萬聖節 04" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="萬聖節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_halloween_05.jpg" alt="萬聖節 05" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="萬聖節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_halloween_06.jpg" alt="萬聖節 06" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="萬聖節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_halloween_07.jpg" alt="萬聖節 07" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="萬聖節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_halloween_08.jpg" alt="萬聖節 08" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="萬聖節">
+            <div class="pf-thumb"><img src="images/portfolio/theme_halloween_09.jpg" alt="萬聖節 09" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="藏族">
+            <div class="pf-thumb"><img src="images/portfolio/theme_tibetan_01.jpg" alt="藏族 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="藏族">
+            <div class="pf-thumb"><img src="images/portfolio/theme_tibetan_02.jpg" alt="藏族 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="藏族">
+            <div class="pf-thumb"><img src="images/portfolio/theme_tibetan_03.jpg" alt="藏族 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="輕婚紗">
+            <div class="pf-thumb"><img src="images/portfolio/theme_wedding_01.jpg" alt="輕婚紗 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="輕婚紗">
+            <div class="pf-thumb"><img src="images/portfolio/theme_wedding_02.jpg" alt="輕婚紗 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="主題寫真" data-subcat="輕婚紗">
+            <div class="pf-thumb"><img src="images/portfolio/theme_wedding_03.jpg" alt="輕婚紗 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="活動紀錄">
+            <div class="pf-thumb"><img src="images/portfolio/event_01.jpg" alt="活動紀錄 01" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="活動紀錄">
+            <div class="pf-thumb"><img src="images/portfolio/event_02.jpg" alt="活動紀錄 02" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="活動紀錄">
+            <div class="pf-thumb"><img src="images/portfolio/event_03.jpg" alt="活動紀錄 03" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="活動紀錄">
+            <div class="pf-thumb"><img src="images/portfolio/event_04.jpg" alt="活動紀錄 04" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="活動紀錄">
+            <div class="pf-thumb"><img src="images/portfolio/event_05.jpg" alt="活動紀錄 05" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="活動紀錄">
+            <div class="pf-thumb"><img src="images/portfolio/event_06.jpg" alt="活動紀錄 06" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="活動紀錄">
+            <div class="pf-thumb"><img src="images/portfolio/event_07.jpg" alt="活動紀錄 07" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="活動紀錄">
+            <div class="pf-thumb"><img src="images/portfolio/event_08.jpg" alt="活動紀錄 08" loading="lazy"></div>
+          </div>
+          <div class="pf-item" data-cat="活動紀錄">
+            <div class="pf-thumb"><img src="images/portfolio/event_09.jpg" alt="活動紀錄 09" loading="lazy"></div>
+          </div>
         </div>
 
       </div>
     </section>
+
+    <div class="lb-overlay" id="lbOverlay" role="dialog" aria-modal="true" aria-label="圖片放大">
+      <div class="lb-spinner" id="lbSpinner"></div>
+      <img class="lb-img" id="lbImg" src="" alt="">
+      <div class="lb-info" id="lbInfo"></div>
+      <button class="lb-close" id="lbClose" aria-label="關閉">&#x2715;</button>
+      <button class="lb-prev"  id="lbPrev"  aria-label="上一張">&#8592;</button>
+      <button class="lb-next"  id="lbNext"  aria-label="下一張">&#8594;</button>
+    </div>
   </main>
 
   <footer class="footer">
@@ -231,17 +321,13 @@
         </svg>
       </a>
       <a href="https://www.threads.com/@sedona_photo" target="_blank" rel="noopener" aria-label="Threads">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.5 12.068V12c0-3.518.85-6.372 2.495-8.481C5.845 1.205 8.598.024 12.179 0h.014c2.048.015 3.898.487 5.496 1.404l-1.078 1.869c-1.272-.734-2.745-1.116-4.406-1.129C9.52 2.163 7.387 2.986 5.996 4.59 4.638 6.163 3.999 8.377 3.999 12c0 3.623.639 5.837 1.997 7.41 1.391 1.604 3.523 2.428 6.336 2.448 1.705-.012 3.105-.38 4.175-1.093.98-.653 1.63-1.597 1.93-2.807.255-1.017.285-2.136.085-3.307a5.47 5.47 0 0 0-.625-1.762c-.52.614-1.125 1.08-1.817 1.394-1.08.492-2.3.617-3.566.369-1.193-.233-2.228-.827-2.999-1.717-.792-.916-1.194-2.09-1.133-3.295.063-1.263.589-2.41 1.481-3.228.893-.818 2.106-1.28 3.413-1.3 1.002-.014 2.004.219 2.9.673.277.141.543.303.796.484.196-.426.308-.895.308-1.388 0-.414-.065-.818-.19-1.205l1.883-.628c.22.655.338 1.352.338 2.074 0 .838-.172 1.649-.507 2.388.3.412.565.857.79 1.336.5 1.068.745 2.273.707 3.49-.04 1.34-.352 2.6-.908 3.664l-.006.011c-.67 1.287-1.703 2.272-3.068 2.93-1.308.63-2.903.96-4.741.973zM14.5 10.5c-.52-.48-1.18-.74-1.9-.73-.76.014-1.44.3-1.913.742-.48.446-.747 1.05-.78 1.73-.04.73.22 1.43.71 1.98.485.554 1.18.903 1.966 1.056.897.177 1.79.09 2.565-.25.63-.288 1.14-.76 1.52-1.38a7.563 7.563 0 0 0-.168-3.148z"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.5 12.068V12c0-3.518.85-6.372 2.495-8.481C5.845 1.205 8.598.024 12.179 0h.014c2.048.015 3.898.487 5.496 1.404l-1.078 1.869c-1.272-.734-2.745-1.116-4.406-1.129C9.52 2.163 7.387 2.986 5.996 4.59 4.638 6.163 3.999 8.377 3.999 12c0 3.623.639 5.837 1.997 7.41 1.391 1.604 3.523 2.428 6.336 2.448 1.705-.012 3.105-.38 4.175-1.093.98-.653 1.63-1.597 1.93-2.807.255-1.017.285-2.136.085-3.307a5.47 5.47 0 0 0-.625-1.762c-.52.614-1.125 1.08-1.817 1.394-1.08.492-2.3.617-3.566.369-1.193-.233-2.228-.827-2.999-1.717-.792-.916-1.194-2.09-1.133-3.295.063-1.263.589-2.41 1.481-3.228.893-.818 2.106-1.28 3.413-1.3 1.002-.014 2.004.219 2.9.673.277.141.543.303.796.484.196-.426.308-.895.308-1.388 0-.414-.065-.818-.19-1.205l1.883-.628c.22.655.338 1.352.338 2.074 0 .838-.172 1.649-.507 2.388.3.412.565.857.79 1.336.5 1.068.745 2.273.707 3.49-.04 1.34-.352 2.6-.908 3.664l-.006.011c-.67 1.287-1.703 2.272-3.068 2.93-1.308.63-2.903.96-4.741.973zM14.5 10.5c-.52-.48-1.18-.74-1.9-.73-.76.014-1.44.3-1.913.742-.48.446-.747 1.05-.78 1.73-.04.73.22 1.43.71 1.98.485.554 1.18.903 1.966 1.056.897.177 1.79.09 2.565-.25.63-.288 1.14-.76 1.52-1.38a7.563 7.563 0 0 0-.168-3.148z"/></svg>
       </a>
       <a href="https://line.me/R/ti/p/@454gtomg" target="_blank" rel="noopener" aria-label="LINE">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
       </a>
     </div>
   </footer>
   <script src="js/main.js"></script>
 </body>
-</html>
+</html>                                                                                                                                                                                                   
