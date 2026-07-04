@@ -2,7 +2,7 @@
    SEDONA PHOTOGRAPHY — DESIGN SYSTEM
    ========================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=EB+Garamond:ital,wght@1,400;1,500&family=Noto+Sans+TC:wght@300;400;500&display=swap');
 
 /* ── Variables ── */
 :root {
@@ -14,6 +14,7 @@
   --white:         #FFFFFF;
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-number:  'EB Garamond', 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Noto Sans TC', -apple-system, sans-serif;
 
   --max-w:      1200px;
@@ -486,8 +487,8 @@ button { cursor: pointer; font-family: var(--font-body); }
   border-bottom-color: var(--primary);
 }
 .service-card-num {
-  font-family: var(--font-display); font-size: 2.5rem;
-  font-weight: 300; color: var(--primary);
+  font-family: var(--font-number); font-size: 2.8rem;
+  font-style: italic; font-weight: 400; color: var(--primary);
   line-height: 1; margin-bottom: 16px;
 }
 .service-card-title {
@@ -523,8 +524,8 @@ button { cursor: pointer; font-family: var(--font-body); }
   width: 54px; height: 54px;
   border: 1px solid var(--primary); border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-display); font-size: 1.3rem;
-  font-weight: 400; color: var(--primary);
+  font-family: var(--font-number); font-size: 1.5rem;
+  font-style: italic; font-weight: 400; color: var(--primary);
   margin: 0 auto 22px; background: var(--white); position: relative; z-index: 1;
 }
 .booking-step-title {
@@ -579,8 +580,8 @@ button { cursor: pointer; font-family: var(--font-body); }
 }
 .pricing-table tr:hover td { background: rgba(200,92,80,0.03); }
 .pricing-table .price {
-  font-family: var(--font-display); font-size: 1.25rem;
-  font-weight: 400; color: var(--primary); white-space: nowrap;
+  font-family: var(--font-number); font-size: 1.3rem;
+  font-style: italic; font-weight: 400; color: var(--primary); white-space: nowrap;
 }
 .pricing-table .plan-name { font-weight: 400; color: var(--text); }
 .pricing-asterisk {
@@ -596,8 +597,8 @@ button { cursor: pointer; font-family: var(--font-body); }
 .pricing-addon-name { font-size: 0.88rem; font-weight: 300; color: var(--text); }
 .pricing-addon-detail { font-size: 0.78rem; color: var(--text-light); margin-top: 3px; }
 .pricing-addon-price {
-  font-family: var(--font-display); font-size: 1.1rem;
-  font-weight: 400; color: var(--primary);
+  font-family: var(--font-number); font-size: 1.2rem;
+  font-style: italic; font-weight: 400; color: var(--primary);
 }
 .pricing-cta-box {
   background: var(--primary); color: var(--white);
@@ -618,6 +619,39 @@ button { cursor: pointer; font-family: var(--font-body); }
   transition: background var(--ease), color var(--ease);
 }
 .btn-white:hover { background: var(--white); color: var(--primary); }
+
+/* =========================================
+   PHILOSOPHY GRID (拍攝理念)
+   ========================================= */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+/* 拍攝理念數字用 EB Garamond italic */
+.philosophy-grid p[style*="font-display"] {
+  font-family: var(--font-number) !important;
+  font-style: italic !important;
+}
+@media (max-width: 768px) {
+  .philosophy-grid {
+    gap: 6px;
+  }
+  .philosophy-grid > div {
+    padding: 20px 10px !important;
+  }
+  .philosophy-grid .phil-desc {
+    display: none; /* 手機隱藏長文字，保持橫式簡潔 */
+  }
+  .philosophy-grid h3 {
+    font-size: 0.82rem !important;
+    letter-spacing: 0.06em !important;
+  }
+  .philosophy-grid p[style*="2.5rem"] {
+    font-size: 1.8rem !important;
+    margin-bottom: 8px !important;
+  }
+}
 
 /* =========================================
    ABOUT PAGE
